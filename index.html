@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="https://kit.fontawesome.com/177e845bfd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- header -->
+        <header>
+            <a href="index.html"><img src="images/logo plant.svg" alt="logo"></a>
+            <form name="search" class="header_form">
+                <input type="search" name="SEARCH_BAR" placeholder="What are you looking for?" class="search_bar">
+                <a href=""><button type="submit" name="SUBMIT_SEARCH" value="search" class="search_button"><i
+                            class="fa-solid fa-magnifying-glass"></i></button></a>
+            </form>
+            <div class="header_buttons_div">
+                <a href=""><button class="log_in">LOG IN</button></a>
+                <a href=""><button class="icon_button"><i class="fa-solid fa-cart-shopping"></i></button></a>
+            </div>
+        </header>
+        <!-- nav -->
+        <nav class="main_nav">
+            <ul class="main_nav_ul">
+                <li><a href="" class="main_nav_ul_items">HOME</a></li>
+                <li><a href="" class="main_nav_ul_items">ABOUT</a></li>
+                <li><a href="" class="main_nav_ul_items">SERVICES</a></li>
+                <li><a href="" class="main_nav_ul_items">PLANT CARE</a></li>
+                <li><a href="" class="main_nav_ul_items contact_li">CONTACT US</a></li>
+            </ul>
+        </nav>
+        <!-- section -->
+        <section>
+            <form name="contact_form" class="contact_form">
+                <h2 class="form_header">CONTACT US</h2>
+
+                <div class="form_div1">
+                    <input type="text" name="NAME" placeholder="Name" class="name">
+                    <input type="email" name="EMAIL" placeholder="Email" class="email">
+                </div>
+
+                <label for="select" class="select_label">Is your question about an existing order?</label>
+                <select name="ANSWER" id="select">
+                    <option value=""></option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+
+                <label for="" class="main_radio_label">I have a delivery question about my order</label>
+                <div class="radio_divs">
+                    <input type="radio" name="DELIVERY" value="did_not_recieve" id="radio1">
+                    <label for="radio1" class="radio_label">I did not receive my order</label>
+                </div>
+                <div class="radio_divs second_radio_div">
+                    <input type="radio" name="DELIVERY" value="demaged" id="radio2">
+                    <label for="radio2" class="radio_label ">My order is incorrect or arrived damaged</label>
+                </div>
+                <div class="radio_divs third_radio_div">
+                    <input type="radio" name="DELIVERY" value="canceled" id="radio3">
+                    <label for="radio3" class="radio_label">Cancel my order</label>
+                </div>
+                <div class="radio_divs">
+                    <input type="radio" name="DELIVERY" value="changed" id="radio4">
+                    <label for="radio4" class="radio_label">Change my shipping address</label>
+                </div>
+
+                <label for="textarea" class="textarea_label">Please provide more details below.</label>
+                <textarea name="TEXT" id="textarea" cols="30" rows="10" placeholder="Message"></textarea>
+
+                <div class="checkbox_div">
+                    <input type="checkbox" name="CHECKBOX" value="receive" id="checkbox">
+                    <label for="checkbox" class="checkbox_label">I want to receive the newsletter</label>
+                </div>
+
+                <input type="submit" name="SUBMIT" id="" value="SEND" class="input_button">
+            </form>
+        </section>
+        <!-- footer -->
+        <footer>
+            <div class="footer_div1">
+                <h5>Follow us</h5>
+                <div class="icons_div">
+                    <a href="https://www.facebook.com/" target="_blank"><i
+                            class="fa-brands fa-square-facebook social_icons"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i
+                            class="fa-brands fa-square-instagram social_icons"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i
+                            class="fa-brands fa-square-twitter social_icons"></i></a>
+                    <a href="https://www.pinterest.com/" target="_blank"><i
+                            class="fa-brands fa-square-pinterest social_icons"></i></a>
+                </div>
+            </div>
+            <div>
+                <h5 class="h5">Contact us</h5>
+                <div>
+                    <div class="contact_first_div">
+                        <a href="https://www.google.com/maps/place/94+Broadway,+New+York,+NY+10012,+USA/@40.7077964,-74.011377,17z/data=!3m1!4b1!4m6!3m5!1s0x89c25a1724c77bdd:0x7370bdde64d46e68!8m2!3d40.7077964!4d-74.011377!16s%2Fg%2F11f7hlsqvz?entry=ttu"
+                            target="_blank" class="footer_links"><i class="fa-solid fa-location-dot contact_icons"></i>
+                            <p class="div_text">New York, 94 Brodway</p>
+                        </a>
+                    </div>
+                    <div class="contact_middle_div">
+                        <a href="tel:+555 67 88 00" class="footer_links"><i class="fa-solid fa-phone contact_icons"></i>
+                            <p class="div_text">+555 67 88 00</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="mailto:plant@gmail.com" class="footer_links"><i
+                                class="fa-solid fa-envelope contact_icons"></i>
+                            <p class="div_text">plant@gmail.com</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright_text">Copyright © 2023 House Plant Shop.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
